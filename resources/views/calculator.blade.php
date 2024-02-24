@@ -14,7 +14,7 @@
         <p>Result: {{ $result }}</p>
     @endif
 
-    <form method="post" action="{{ url('/calculate') }}">
+    <form method="post" action="{{ url('/calculate') }}" style="display:flex; flex-direction:row; gap: 10px;">
         @csrf
         <label for="num1">Number 1:</label>
         <input type="number" name="num1" required>
